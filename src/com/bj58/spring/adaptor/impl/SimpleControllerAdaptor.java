@@ -7,7 +7,7 @@ import com.bj58.spring.controller.impl.SimpleController;
 public class SimpleControllerAdaptor implements HandlerAdaptor {
 
 	@Override
-	public void handle(Object handler) {
+	public void handle(Controller handler) {
 		((SimpleController)handler).doSimpleHandler();
 	}
 

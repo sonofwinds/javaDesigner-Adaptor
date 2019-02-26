@@ -7,7 +7,7 @@ import com.bj58.spring.controller.impl.AnnotationController;
 public class AnnotationControllerAdaptor implements HandlerAdaptor {
 
 	@Override
-	public void handle(Object handler) {
+	public void handle(Controller handler) {
 		((AnnotationController)handler).doAnnotationHandler();
 	}
 

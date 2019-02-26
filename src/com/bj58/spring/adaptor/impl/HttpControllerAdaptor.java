@@ -7,7 +7,7 @@ import com.bj58.spring.controller.impl.HttpController;
 public class HttpControllerAdaptor implements HandlerAdaptor {
 
 	@Override
-	public void handle(Object handler) {
+	public void handle(Controller handler) {
 		((HttpController)handler).doHttpHandler();
 	}
 
